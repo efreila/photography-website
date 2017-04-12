@@ -177,12 +177,12 @@ textarea {
   background-color: white;
 }
 
-/*@media screen and (max-width:980px) 
+@media screen and (max-width:980px) 
 {
   #send_btn {
-    width: ;
+    width: 75px;
   }
-}*/
+}
 
 #send_btn:hover {
   background-color: black;
