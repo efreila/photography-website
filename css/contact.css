@@ -180,8 +180,8 @@ textarea {
 @media screen and (max-width:980px) 
 {
   #send_btn {
-    width: 50px;
-    border: 2px solid pink;
+    width: 40%;
+    border: 2px solid red;
   }
 }
 
