@@ -166,7 +166,6 @@ textarea {
 }
 
 #send_btn {
-  position: absolute;
   font-family: century gothic;
   font-size: 13px;
   font-weight: bold;
@@ -182,7 +181,6 @@ textarea {
 {
   #send_btn {
     width: 75px;
-    bottom: 1%;
   }
 }
 
