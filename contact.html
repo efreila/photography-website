@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Eric Freilafert</title>
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <link rel="stylesheet" href="css/slidebars.css">
+    <script src="https://use.fontawesome.com/7b51f8f186.js"></script>
+    <script src="js/slidebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  <body>
+  	<div canvas="container">
+<!--  NAVIGATION BAR (HEADER) -->
+			<header>
+		  		<ul class="topnav" id="left_nav">
+		  			<li><a href="index.html" id="Home">Home</a></li>
+		 				<li><a href="portfolio.html" id="Portfolio">Portfolio</a></li>
+		 			</ul>
+		 			<img src="assets/logo.png" id="logo"/>
+		 			<ul class="topnav" id="right_nav">
+				    <li><a href="about.html" id="About">About</a></li>
+				    <li><a href="contact.html" id="Contact">Contact</a></li>
+					</ul>
+  				<a id="menu-button">&#9776;</a>
+		  </header>
+<!--  NAVIGATION BAR (HEADER) -->
+
+			<div id="contact_form">
+				<h1>Reach Out</h1>
+				<p>If you'd like to meet up for a shoot, ask any questions, or say hi, feel free to contact me!</p>
+				<p>Fill out the form below or shoot me an email directly at efreilafert@gmail.com.</p>
+				<form method="POST" onsubmit="return validateForm()" action="http://formspree.io/efreilafert@gmail.com">
+					<input type="text" name="_gotcha" style="display:none" />
+					<input type="email" name="email" id="email_field" placeholder="*Your email">
+						<div class="failed_field" id="failed_field1">
+							<i aria-hidden="true" id="email_icon"></i>
+							<p id="email_fail"></p>
+						</div>
+				  <input type="subject" name="subject" id="subject_field" placeholder="*Subject" />
+				  	<div class="failed_field" id="failed_field2">
+				  		<i aria-hidden="true" id="subject_icon"></i>
+				  		<p id="subject_fail"></p>
+				  	</div>
+				  <textarea name="message" id="message_field" placeholder="*Your message"></textarea>
+				  	<div class="failed_field" id="failed_field3">
+				  		<i aria-hidden="true" id="message_icon"></i>
+				  		<p id="message_fail"></p>
+				  	</div>
+				  <button type="submit" id="send_btn">Send</button>
+				  <input type="hidden" name="_next" value="contact.html" />
+				</form>
+			</div>
+		</div>
+
+		<!--  NAVIGATION BAR FOR MOBILE (HEADER) -->
+		<div class="my-menu" off-canvas="mobile-menu top push">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+	 			<li><a href="portfolio.html">Portfolio</a></li>
+	 			<li><a href="about.html">About</a></li>
+	 			<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+<!--  NAVIGATION BAR FOR MOBILE (HEADER) -->
+
+		<script type="text/javascript" src="js/contact.js"></script>
+  </body>
+</html>

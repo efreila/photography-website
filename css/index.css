@@ -1,0 +1,326 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height:60px;
+    background-color: white;
+    box-shadow: 0px 3px 10px gray;
+    z-index: 20;
+}
+
+/* Style the navigation buttons in the header */
+header a {
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: century gothic;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+  }
+
+header a:hover {
+    opacity: 1;
+}
+
+#logo {
+  position: absolute;
+  left: 50%;
+          transform: translate(-50%);
+      -ms-transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  height:40px;
+  margin-top: 10px;
+}
+
+.topnav {
+    list-style-type: none;   
+    margin-top: 20px;
+    padding: 0;
+}
+
+#left_nav {
+  position: absolute;
+  float: left;
+  left: 10%;
+
+}
+
+#right_nav {
+  position: absolute;
+  right: 10%;
+  float: right;
+
+}
+
+#Home {
+  margin-right: 75px;
+}
+
+#Portfolio {
+  margin-left: 75px;
+
+}
+
+#About {
+  margin-right: 75px;
+
+}
+
+#Contact {
+  margin-left: 75px;
+}
+
+/* Float the list items side by side */
+.topnav li {
+    float: left;
+}
+
+/*MOBILE FRIENDLY MENU*/
+#menu-button 
+{
+  display: none;
+}
+
+.my-menu
+{
+  display: none;
+  text-align: center;
+}
+
+.my-menu ul
+{
+  margin-top: 15px;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+
+}
+
+.my-menu li
+{
+  text-align: left;
+  list-style-type: none; 
+  padding: 5px;
+}
+
+
+.my-menu li a
+{
+  text-decoration: none;
+  font-family: century gothic;
+  color: black;
+}
+
+
+
+@media screen and (max-width:950px) 
+{
+  .topnav 
+  {
+    display: none;
+  }
+
+  #menu-button 
+  {
+    display: inline-block;
+    position: absolute;
+    right: 4%;
+    top: 19px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+/*MOBILE FRIENDLY MENU*/
+
+
+
+/*  ---*IMAGE SLIDER*/
+html { min-height: 100%; }
+
+body { height: 100%; }
+
+.slideshow {
+  list-style: none;
+  z-index: 1;
+}
+
+.slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  background-position: 50% 80%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: imageAnimation 30s linear infinite 0s;
+     -moz-animation: imageAnimation 30s linear infinite 0s;
+          animation: imageAnimation 30s linear infinite 0s;
+}
+
+.no-cssanimations .slideshow li span { opacity: 1; }
+
+@-webkit-keyframes 
+imageAnimation { 0% {
+ opacity: 0;
+ -webkit-animation-timing-function: ease-in;
+}
+ 12.5% {
+ opacity: 1;
+ -webkit-animation-timing-function: ease-out;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+@-moz-keyframes 
+imageAnimation { 0% {
+ opacity: 0;
+ -moz-animation-timing-function: ease-in;
+}
+ 12.5% {
+ opacity: 1;
+ -moz-animation-timing-function: ease-out;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+@keyframes 
+imageAnimation { 0% {
+ opacity: 0;
+ -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+         animation-timing-function: ease-in;
+}
+ 12.5% {
+ opacity: 1;
+ -webkit-animation-timing-function: ease-out;
+    -moz-animation-timing-function: ease-out;
+         animation-timing-function: ease-out;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+@-webkit-keyframes 
+titleAnimation { 0% {
+ opacity: 0;
+}
+ 12.5% {
+ opacity: 1;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+@-moz-keyframes 
+titleAnimation { 0% {
+ opacity: 0;
+}
+ 12.5% {
+ opacity: 1;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+@keyframes 
+titleAnimation { 0% {
+ opacity: 0;
+}
+ 12.5% {
+ opacity: 1;
+}
+ 25% {
+ opacity: 1;
+}
+ 37.5% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+.slideshow li:nth-child(1) span { 
+  background-image: url(https://raw.githubusercontent.com/efreila/photography-website/master/assets/PiPhiWEB.jpg); 
+}
+
+.slideshow li:nth-child(2) span {
+  background-image: url(https://raw.githubusercontent.com/efreila/photography-website/master/assets/MonkeyWEB.jpg);
+  -webkit-animation-delay: 6s;
+     -moz-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.slideshow li:nth-child(3) span {
+  background-image: url(https://raw.githubusercontent.com/efreila/photography-website/master/assets/MelonsWEB.jpg);
+  -webkit-animation-delay: 12s;
+     -moz-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.slideshow li:nth-child(4) span {
+  background-image: url(https://raw.githubusercontent.com/efreila/photography-website/master/assets/RockefellerWEB.jpg);
+  -webkit-animation-delay: 18s;
+     -moz-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+.slideshow li:nth-child(5) span {
+  background-image: url(https://raw.githubusercontent.com/efreila/photography-website/master/assets/KnappsWEB.jpg);
+  -webkit-animation-delay: 24s;
+     -moz-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+
+
