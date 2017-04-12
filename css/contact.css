@@ -166,7 +166,6 @@ textarea {
 }
 
 #send_btn {
-  text-align: center;
   font-family: century gothic;
   font-size: 13px;
   font-weight: bold;
@@ -178,7 +177,7 @@ textarea {
   background-color: white;
 }
 
-@media screen and (max-width:615px) 
+@media screen and (max-width:980px) 
 {
   #send_btn {
     width: 50px;
