@@ -14,7 +14,7 @@ header a {
     font-size: 15px;
     text-align: center;
     text-transform: uppercase;
-    font-family: century gothic;
+    font-family: 'Muli', sans-serif;
     text-decoration: none;
     color: black;
     opacity: 0.5;
@@ -110,7 +110,7 @@ header a:hover {
 .my-menu li a
 {
   text-decoration: none;
-  font-family: century gothic;
+  font-family: 'Muli', sans-serif;
   color: black;
 }
 
